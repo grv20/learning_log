@@ -13,4 +13,6 @@ path('topics/(?P<topic_id>\d+)/', views.topic, name='topic'),
 path('new_topic/', views.new_topic, name='new_topic'),
 # Page for adding a new entry
 path('new_entry/(?P<topic_id>\d+)/', views.new_entry, name='new_entry'),
+# Page for editing an entry
+path('edit_entry/(?P<entry_id>\d+)/', views.edit_entry,name='edit_entry'),
 ]
